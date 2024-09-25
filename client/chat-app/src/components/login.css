@@ -1,0 +1,111 @@
+/* General styling for the login page */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for login form */
+.login-container {
+  width: 460px;
+  height: 53vh;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #f3cdcd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading styling */
+.login-container h2 {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+/* Button styling */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #7c94ae;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.login-container button:active {
+  background-color: #004085;
+  transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .login-container h2 {
+    font-size: 20px;
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    font-size: 14px;
+  }
+
+  .login-container button {
+    font-size: 14px;
+  }
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-link p {
+  font-size: 14px;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+.register-link button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
